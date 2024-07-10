@@ -4,8 +4,13 @@
 
 ### 1. Education App
 
-![alt text](image.png)
+![01ss](https://github.com/kangmin01/css-layout-master-class/assets/57487175/ddc554d3-eec6-4946-9069-fe22995da305)
 
 ### 2. Fashion Store
 
-![alt text](image-1.png)
+![02ss](https://github.com/kangmin01/css-layout-master-class/assets/57487175/d21853a6-c2ec-4772-880f-0784e8035296)
+
+### 3. Beauty Store
+
+![image](https://github.com/kangmin01/css-layout-master-class/assets/57487175/e1ccab24-0ed7-4d90-9fe7-22536ac0da2f)
+
