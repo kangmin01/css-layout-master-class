@@ -52,7 +52,7 @@ $borderWidth: 1px;
     gap: $borderWidth;
 
     .product__img {
-      background-image: url("../public/images/cat.jpg");
+      background-image: url("/images/cat.jpg");
       background-size: cover;
       background-position: center;
     }
