@@ -1,0 +1,172 @@
+$bg: #e4e5e9;
+$grey: #cbcfd2;
+$darkGrey: #7f848a;
+$black: #393e44;
+$yellow: #edc212;
+$red: #e21a00;
+$blue: #392aa9;
+
+#macOSPage {
+  background-color: $black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  color: $black;
+  gap: 2px;
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+
+    .info__hd,
+    .info__space,
+    .info__settings {
+      background-color: $bg;
+    }
+
+    .info__space {
+      grid-row: 1 / span 2;
+      grid-column: 2 / span 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+
+      .info__space-item {
+        h3 {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+          padding-left: 10px;
+        }
+        h2 {
+          font-size: 120px;
+        }
+      }
+    }
+
+    .info__settings {
+      grid-row: 3 / span 2;
+      grid-column: 2 / span 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .info__hd {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .hd__discs {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div:first-child {
+          height: 110px;
+          width: 110px;
+          border-radius: 50%;
+          background-color: $black;
+        }
+
+        div:last-child {
+          height: 22px;
+          width: 22px;
+          border-radius: 50%;
+          background-color: $bg;
+          position: absolute;
+        }
+      }
+
+      .hd__discs-red {
+        div:first-child {
+          background-color: $red;
+        }
+
+        div:last-child {
+          background-color: $bg;
+        }
+      }
+
+      .hd__discs-gray {
+        div:first-child {
+          background-color: $grey;
+        }
+
+        div:last-child {
+          background-color: $bg;
+        }
+      }
+
+      .hd__footer {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hd__full {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2px;
+
+          span {
+            height: 6px;
+            width: 6px;
+            border-radius: 3px;
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  .stats {
+    display: grid;
+    grid-template-rows: 2.8fr 1fr 1.4fr 2fr 4fr;
+
+    .stats__stat {
+      background-color: lightblue;
+      padding-top: 14px;
+
+      &:first-child {
+        background-color: $bg;
+      }
+      &:nth-child(2) {
+        background-color: $yellow;
+      }
+      &:nth-child(3) {
+        background-color: $darkGrey;
+      }
+      &:nth-child(4) {
+        background-color: $red;
+        color: white;
+      }
+      &:nth-child(5) {
+        background-color: $blue;
+        color: white;
+      }
+
+      .stat__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+  }
+}
