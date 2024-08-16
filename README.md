@@ -23,3 +23,5 @@
 ![image](https://github.com/user-attachments/assets/fc39fa7d-9492-4a49-b0ef-d8b79adb0969)
 
 ### 6. Mac OS
+
+![image](https://github.com/user-attachments/assets/b3996f6d-61a0-4e33-89d5-e0cf61b4fa25)
