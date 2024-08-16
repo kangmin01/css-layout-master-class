@@ -1,0 +1,137 @@
+$bg: #f0f0f0;
+$accent: #c7c2cc;
+$borderWidth: 2px;
+
+@keyframes slide {
+  0% {
+    transform: translateY(-3000%) rotateZ(90deg);
+  }
+  100% {
+    transform: translateY(calc(0% - 65px)) rotateZ(90deg);
+  }
+}
+
+#museumPage {
+  font-family: "Kanit", sans-serif;
+  height: 100vh;
+  display: grid;
+  gap: $borderWidth;
+  background-color: black;
+  grid-template-rows: 12fr 12fr 40fr 36fr;
+  grid-template-columns: 0.3fr repeat(4, 1fr);
+
+  div {
+    background-color: $bg;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:nth-child(11) {
+      grid-column: span 3;
+    }
+  }
+
+  .logo {
+    grid-area: span 2 / span 2;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    grid-column: span 3;
+    font-size: 70px;
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .banner {
+    grid-row: span 2;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    span {
+      position: absolute;
+      color: white;
+      width: max-content;
+      font-size: 26px;
+      animation: slide 5s linear infinite;
+    }
+  }
+
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 40px;
+
+    .nav-btn__name {
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .nav-btn__desc {
+      font-size: 18px;
+    }
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 30px 36px;
+
+    &.post--big {
+      .post__title {
+        font-size: 200px;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 150px;
+      }
+    }
+
+    .post__title {
+      font-weight: 800;
+      font-size: 34px;
+      width: 70%;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 300;
+    }
+  }
+
+  .featured {
+    background-color: $accent;
+    padding: 26px;
+    display: flex;
+
+    div {
+      border: $borderWidth solid black;
+      background-color: $bg;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-weight: 800;
+        font-size: 34px;
+      }
+    }
+  }
+}
